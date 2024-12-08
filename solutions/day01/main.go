@@ -16,7 +16,6 @@ type NumberPairs struct {
 
 func getLists(s string) (*NumberPairs, error) {
 	lines := strings.Split(s, "\n")
-	// Prealoca los slices basándose en el número de líneas
 	pairs := &NumberPairs{
 		left:  make([]int, 0, len(lines)),
 		right: make([]int, 0, len(lines)),
